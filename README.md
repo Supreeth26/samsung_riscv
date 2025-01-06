@@ -21,6 +21,8 @@ ls -ltr
 
 cd work/tools/openlane_working_dir/openlane
 
+docker
+
 
 ![openlane](https://github.com/user-attachments/assets/53255d29-317b-49b8-a1c4-0a0d399b11ee)
 
