@@ -15,3 +15,7 @@ RISC-V is an open standard instruction set architecture (ISA) based on the princ
 ![output of c code](https://github.com/user-attachments/assets/51434019-4484-4e07-be8c-6b8281f1e42a)
 
 ![c to assembly11](https://github.com/user-attachments/assets/a2dcb682-fea1-452d-bbe2-7aa641a3cc60)
+
+![less](https://github.com/user-attachments/assets/a08ce967-cf32-42c3-9ffd-08605fea206b)
+
+
