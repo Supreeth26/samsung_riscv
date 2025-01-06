@@ -8,7 +8,9 @@ TASK1:  Task is to install required tools for this internship such as ubantu on 
 
 
 1.Install ubuntu on Oracle Virtual Machine Box
+
 2.Install Openlane
+
 OpenLane is an open-source flow for digital ASIC design, specifically developed to assist in the creation of integrated circuits (ICs) using open-source tools. It provides a complete automated RTL-to-GDSII (Register Transfer Level to GDSII) design flow, integrating multiple open-source tools and frameworks to facilitate chip design.
 Follow the below instructions in terminal
 ![openlane](https://github.com/user-attachments/assets/53255d29-317b-49b8-a1c4-0a0d399b11ee)
