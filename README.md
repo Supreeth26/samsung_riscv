@@ -7,25 +7,35 @@ TASK1:  Task is to install required tools for this internship such as ubantu on 
 <summary>Click to expand</summary>
 
 
-1.Install ubuntu on Oracle Virtual Machine Box
+1. Install ubuntu on Oracle Virtual Machine Box
 
-2.Install Openlane
+2. Install Openlane
 
 OpenLane is an open-source flow for digital ASIC design, specifically developed to assist in the creation of integrated circuits (ICs) using open-source tools. It provides a complete automated RTL-to-GDSII (Register Transfer Level to GDSII) design flow, integrating multiple open-source tools and frameworks to facilitate chip design.
 
 Follow the below instructions in terminal
 
-cd Desktop
+$ cd Desktop
 
-ls -ltr
+$ ls -ltr
 
-cd work/tools/openlane_working_dir/openlane
+$ cd work/tools/openlane_working_dir/openlane
 
-docker
+$ docker
 
 
 ![openlane](https://github.com/user-attachments/assets/53255d29-317b-49b8-a1c4-0a0d399b11ee)
 
+
+3. simple C code
+
+open the bash terminal and locate to the diretory where you want to create your file. Then run following command.
+
+$ leafpad sum1ton.c
+
+if leafpad is not downloaded follow the below command in bash.
+
+$ sudo apt install leafpad
 
 
 ![simple c code](https://github.com/user-attachments/assets/109b9bbf-a06d-4538-b880-f6c8531cc757)
