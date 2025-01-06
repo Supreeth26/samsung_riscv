@@ -15,6 +15,13 @@ OpenLane is an open-source flow for digital ASIC design, specifically developed 
 
 Follow the below instructions in terminal
 
+cd Desktop
+
+ls -ltr
+
+cd work/tools/openlane_working_dir/openlane
+
+
 ![openlane](https://github.com/user-attachments/assets/53255d29-317b-49b8-a1c4-0a0d399b11ee)
 
 
