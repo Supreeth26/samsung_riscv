@@ -86,6 +86,6 @@ After this follow same as above steps (step 4).
 
 ![12inst](https://github.com/user-attachments/assets/e71fe958-2b2d-4c00-bd67-edaa998d540f)
 
-![Screenshot 2024-06-13 002342](https://github.com/user-attachments/assets/d6ee2814-c86b-49b1-93ba-27cc9fce2b60)
+
 
 
