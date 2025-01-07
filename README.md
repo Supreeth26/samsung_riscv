@@ -2,7 +2,7 @@
 
 RISC-V is an open standard instruction set architecture (ISA) based on the principles of reduced instruction set computing (RISC). It is designed to be simple, efficient, and extensible, making it suitable for a wide range of computing systems, from embedded devices to supercomputers.
 
-TASK1:  Task is to install required tools for this internship such as ubantu on VMBox,Openlane,RISCV toolchain and perform simple example by taking simple C code and converting it into Assembly level code.
+TASK1:  Task is to install required tools for this internship such as ubantu on VMBox,Openlane,RISCV toolchain and to refer to C based and RISCV based lab videos and execute the task of compiling the C code using gcc and riscv compiler
 <details>
 <summary>Click to expand</summary>
 
