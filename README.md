@@ -37,6 +37,7 @@ if leafpad is not downloaded follow the below command in bash.
 
 $ sudo apt install leafpad
 
+click the link for C based lab video https://clicks.aweber.com/y/ct/?l=JDD53n&m=3Y8O_TCXOzMXw_6&b=vLXihi9JLQ3sNdpeivsmdw
 
 ![simple c code](https://github.com/user-attachments/assets/109b9bbf-a06d-4538-b880-f6c8531cc757)
 
