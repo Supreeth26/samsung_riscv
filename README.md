@@ -53,7 +53,7 @@ $./a.out
 
 ![output of c code](https://github.com/user-attachments/assets/51434019-4484-4e07-be8c-6b8281f1e42a)
 
-4. After executing the C code now to convert it into Assembly level language follow the below commands in bash.
+4. After executing the C code now to convert it into Assembly level language(Object term) follow the below commands in bash.
 
  $ cat sum1ton.c
 
