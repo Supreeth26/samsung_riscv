@@ -106,44 +106,15 @@ Spike is the official RISC-V Instruction Set Simulator (ISS). It is also referre
 
 Key Features of Spike:
 
-Instruction Set Simulation:
-
+1. Instruction Set Simulation:
 Spike simulates the execution of programs on RISC-V processors. It supports different RISC-V base ISAs (e.g., RV32I, RV64I) as well as extensions like M (multiplication), A (atomic), F (single-precision floating point), and D (double-precision floating point).
 
-Reference Implementation:
-
+2. Reference Implementation:
 As the official simulator, Spike adheres to the RISC-V specifications, making it a reliable tool for verification and debugging.
 
-Debugging and Testing:
-
+3. Debugging and Testing:
 Spike can be used to test RISC-V programs and verify that the software executes correctly on a simulated RISC-V architecture.
 
-Hardware Verification:
-
+4. Hardware Verification:
 Developers can compare the behavior of their custom hardware implementation with the behavior of Spike to ensure compliance with the RISC-V ISA.
-
-Support for Privileged ISA:
-
-Spike supports both the user-level ISA and the privileged ISA, enabling developers to test operating systems, hypervisors, and other system-level software.
-
-Simple and Extensible:
-
-The simulator is designed to be simple and easy to modify, making it a useful educational and research tool.
-Use Cases for Spike:
-
-Software Development:
-
-Writing and testing RISC-V assembly or C/C++ programs before running them on actual hardware.
-
-Compiler Development:
-
-Testing new compilers or modifications to existing compilers targeting the RISC-V architecture.
-
-Operating System Development:
-
-Running and debugging system-level code, such as operating systems and drivers, on a simulated RISC-V platform.
-
-Hardware Design and Verification:
-
-Validating that custom RISC-V hardware implementations produce the same results as the Spike simulator.
 
