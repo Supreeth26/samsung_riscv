@@ -94,11 +94,10 @@ After this follow same as above steps (step 4).
 
 <exit>
 
-# TASK2
+_ **TASK2**
 
-<p>Performing SPIKE Simulation and Debugging the C code with Interactive Debugging Mode using Spike</p>
+Performing SPIKE Simulation and Debugging the C code with Interactive Debugging Mode using Spike
 
-<p><strong>TASK2</strong></p>
 
 
 
