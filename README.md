@@ -96,8 +96,9 @@ After this follow same as above steps (step 4).
 
 # TASK2
 
- Performing SPIKE Simulation and Debugging the C code with Interactive Debugging Mode using Spike
+<p>Performing SPIKE Simulation and Debugging the C code with Interactive Debugging Mode using Spike</p>
 
+<p><strong>TASK2</strong></p>
 
 
 
