@@ -92,7 +92,7 @@ After this follow same as above steps (step 4).
 
 ![12inst](https://github.com/user-attachments/assets/e71fe958-2b2d-4c00-bd67-edaa998d540f)
 
-exit
+<exit>
 
 #TASK2
 
