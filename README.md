@@ -94,12 +94,13 @@ After this follow same as above steps (step 4).
 
 </details>
 
-
-
-
-_ **TASK2**
+# TASK2
 
 Performing SPIKE Simulation and Debugging the C code with Interactive Debugging Mode using Spike
+
+<details>
+<summary>Click to expand</summary>
+
 
 
 
