@@ -118,5 +118,7 @@ Spike can be used to test RISC-V programs and verify that the software executes 
 4. Hardware Verification:
 Developers can compare the behavior of their custom hardware implementation with the behavior of Spike to ensure compliance with the RISC-V ISA.
 
+![same op using gcc and spike](https://github.com/user-attachments/assets/528b2bd2-d949-4583-94bd-0419dec8d90f)
+
 
 
