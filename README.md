@@ -126,6 +126,9 @@ Developers can compare the behavior of their custom hardware implementation with
 
 ![instructions](https://github.com/user-attachments/assets/f83be108-9be3-4fad-be00-bed4ab6f6e13)
 
+![address calculation](https://github.com/user-attachments/assets/33ee66ee-7473-4412-922e-9650032314c6)
+
+
 
 
 
