@@ -172,8 +172,9 @@ $ spike -d pk sum_1ton.o
 
 The debugger will be opened in the terminal. Now, debugging operations can be performed as shown in the following snapshot.
 
-
 ![spike debugger](https://github.com/user-attachments/assets/2e4e4848-0514-43c9-bd6a-bb0be59cac8d)
+
+Press enter to move into the next instruction.
 
 ![instructions](https://github.com/user-attachments/assets/f83be108-9be3-4fad-be00-bed4ab6f6e13)
 
