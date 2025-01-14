@@ -124,5 +124,8 @@ Developers can compare the behavior of their custom hardware implementation with
 
 ![spike debugger](https://github.com/user-attachments/assets/2e4e4848-0514-43c9-bd6a-bb0be59cac8d)
 
+![instructions](https://github.com/user-attachments/assets/f83be108-9be3-4fad-be00-bed4ab6f6e13)
+
+
 
 
