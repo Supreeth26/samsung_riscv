@@ -120,5 +120,7 @@ Developers can compare the behavior of their custom hardware implementation with
 
 ![same op using gcc and spike](https://github.com/user-attachments/assets/528b2bd2-d949-4583-94bd-0419dec8d90f)
 
+![main](https://github.com/user-attachments/assets/d5227032-7a06-4095-9086-d9a113059352)
+
 
 
