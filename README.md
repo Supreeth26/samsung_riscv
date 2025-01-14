@@ -152,13 +152,7 @@ The pk (Proxy Kernel) is a lightweight runtime environment used with RISC-V simu
 
 4. Compatibility: Works seamlessly with user programs compiled using the RISC-V toolchain.
 
-
-
-
-
-The below image is the reference to see that output is same for both the 
-
-
+The below image is the reference to see that output is same for both usimg  gcc compiler and riscv compliler(spike).
 
 ![same op using gcc and spike](https://github.com/user-attachments/assets/528b2bd2-d949-4583-94bd-0419dec8d90f)
 
