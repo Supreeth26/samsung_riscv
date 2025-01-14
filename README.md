@@ -192,6 +192,10 @@ lui: This instruction stands for Load Upper Immediate in the RISC-V assembly lan
 
 ![address calculation](https://github.com/user-attachments/assets/33ee66ee-7473-4412-922e-9650032314c6)
 
+</details>
+
+# TASK3
+
 
 
 
