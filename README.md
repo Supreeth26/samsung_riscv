@@ -156,7 +156,22 @@ The below image is the reference to see that output is same for both usimg  gcc 
 
 ![same op using gcc and spike](https://github.com/user-attachments/assets/528b2bd2-d949-4583-94bd-0419dec8d90f)
 
+Following is the snapshot of RISCV Objdump with -Ofast
+
+Open the Objdump of code by using the following command
+
+$ riscv64-unknown-elf-objdump -d sum_1ton.o | less
+
 ![main](https://github.com/user-attachments/assets/d5227032-7a06-4095-9086-d9a113059352)
+
+## Debugging the Assembly Language Program of sum_1ton.c
+
+  Open the debugger in another terminal by using the following command
+
+$ spike -d pk sum_1ton.o
+
+The debugger will be opened in the terminal. Now, debugging operations can be performed as shown in the following snapshot.
+
 
 ![spike debugger](https://github.com/user-attachments/assets/2e4e4848-0514-43c9-bd6a-bb0be59cac8d)
 
