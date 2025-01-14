@@ -140,8 +140,17 @@ $ spike pk sum_1ton.o
 
 ### What is pk(Proxy Kernel) ?:
 
-_ The pk (Proxy Kernel) is a lightweight runtime environment used with RISC-V simulators and emulators, such as Spike (the RISC-V ISA Simulator), to provide minimal operating system functionality. 
-_ It is not a full-fledged kernel but acts as a bridge to allow user-level programs to run on simulated or bare-metal RISC-V systems.
+The pk (Proxy Kernel) is a lightweight runtime environment used with RISC-V simulators and emulators, such as Spike (the RISC-V ISA Simulator), to provide minimal operating system functionality. It is not a full-fledged kernel but acts as a bridge to allow user-level programs to run on simulated or bare-metal RISC-V systems.
+
+## Key Features of the Proxy Kernel
+
+1. Basic Input/Output: Implements simple I/O functions like printf and scanf.
+
+2. Memory Management: Provides minimal memory management for program execution.
+
+3. System Call Handling: Supports a subset of Linux-like system calls for convenience.
+
+4. Compatibility: Works seamlessly with user programs compiled using the RISC-V toolchain.
 
 
 
