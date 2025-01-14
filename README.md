@@ -125,6 +125,19 @@ Click the below link to get riscv.vdi file
 
 https://forgefunder.com/~kunal/riscv_workshop.vdi
 
+Start of Spike Simulation:
+
+The target is to run the sum1ton file using both gcc compiler and riscv compiler(spike) and both should execute and display same output.
+The instructions to run using gcc complier.
+
+$ gcc sum1ton.c
+$ ./a.out
+
+The instruction to run using riscv(spike) compiler:
+
+$ spike pk sum_1ton.o
+
+
 
 
 ![same op using gcc and spike](https://github.com/user-attachments/assets/528b2bd2-d949-4583-94bd-0419dec8d90f)
