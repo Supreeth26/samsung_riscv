@@ -180,6 +180,16 @@ Press enter to move into the next instruction.
 
 ![instructions](https://github.com/user-attachments/assets/f83be108-9be3-4fad-be00-bed4ab6f6e13)
 
+Debugging operations can be performed as shown in the following snapshot.
+
+Calculation of sp value before and after the instruction 
+
+$ addi sp,sp,-16
+
+addi: This is the "add immediate" instruction. It performs an addition of a register and an immediate value (a constant) and stores the result in a destination register.
+
+lui: This instruction stands for Load Upper Immediate in the RISC-V assembly language.
+
 ![address calculation](https://github.com/user-attachments/assets/33ee66ee-7473-4412-922e-9650032314c6)
 
 
