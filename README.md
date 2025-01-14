@@ -131,12 +131,23 @@ The target is to run the sum1ton file using both gcc compiler and riscv compiler
 The instructions to run using gcc complier.
 
 $ gcc sum1ton.c
+
 $ ./a.out
 
 The instruction to run using riscv(spike) compiler:
 
 $ spike pk sum_1ton.o
 
+### What is pk(Proxy Kernel) ?:
+
+_ The pk (Proxy Kernel) is a lightweight runtime environment used with RISC-V simulators and emulators, such as Spike (the RISC-V ISA Simulator), to provide minimal operating system functionality. 
+_ It is not a full-fledged kernel but acts as a bridge to allow user-level programs to run on simulated or bare-metal RISC-V systems.
+
+
+
+
+
+The below image is the reference to see that output is same for both the 
 
 
 
