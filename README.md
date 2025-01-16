@@ -197,9 +197,10 @@ lui: This instruction stands for Load Upper Immediate in the RISC-V assembly lan
 # TASK3
 
 
-<details>click to expand 
-<summary></summary>
-![Image](https://github.com/user-attachments/assets/8e278e80-7b78-4f09-9954-518f71e9204a)
+<details> 
+<summary>click to expand</summary>
+
+ ![Image](https://github.com/user-attachments/assets/8e278e80-7b78-4f09-9954-518f71e9204a)
 
 
 
