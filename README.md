@@ -204,9 +204,4 @@ Task is to identify instruction type of all the given instructions with its exac
 
  ![Image](https://github.com/user-attachments/assets/8e278e80-7b78-4f09-9954-518f71e9204a)
 
-'''
-
-addfffhgjkmlm. kkl
-
-- jbjnnkmm
 
