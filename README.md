@@ -211,4 +211,6 @@ RISC-V uses a fixed 32-bit instruction length and defines six primary instructio
 
  The R-Type instruction is used for operations that involve registers and not memory locations. This format is typically used for arithmetic and logical operations. The instruction is divided into six fields:
 
+ ![Image](https://github.com/user-attachments/assets/5a2c6900-b832-4464-96bf-c55f18bf728c)
+
 
