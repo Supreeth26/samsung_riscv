@@ -205,12 +205,19 @@ Task is to identify instruction type of all the given instructions with its exac
 
 RISC-V uses a fixed 32-bit instruction length and defines six primary instruction formats: R, I, S, B, U, and J. These formats describe how various fields within the 32-bit instruction word are used.
 
-
+![Image](https://github.com/user-attachments/assets/ba8c652d-c1c0-4521-bce6-a70cc8592005)
 
 ## 1. R Type instruction
 
  The R-Type instruction is used for operations that involve registers and not memory locations. This format is typically used for arithmetic and logical operations. The instruction is divided into six fields:
 
  ![Image](https://github.com/user-attachments/assets/5a2c6900-b832-4464-96bf-c55f18bf728c)
+
+- opcode(7bits)  ->   Specifies the operation (e.g., ADD, SUB).
+- rd(5bits)      ->   Destination register where the result is stored.
+- func3(3bits)   ->   Defines the specific type of operation.
+- rs1(5bits)     ->   Source register 1.
+- rs2(5bits)	    ->   Source register 2.
+- func7(7bits)	  ->   Further distinguishes the operation (e.g., difference between ADD and SUB).
 
 
