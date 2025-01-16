@@ -196,12 +196,17 @@ lui: This instruction stands for Load Upper Immediate in the RISC-V assembly lan
 
 # TASK3
 
+Task is to identify instruction type of all the given instructions with its exact 32 bits instruction code in the desired instruction type format
+
 
 <details> 
 <summary>click to expand</summary>
 
  ![Image](https://github.com/user-attachments/assets/8e278e80-7b78-4f09-9954-518f71e9204a)
 
+'''
 
+addfffhgjkmlm. kkl
 
+- jbjnnkmm
 
