@@ -220,4 +220,14 @@ RISC-V uses a fixed 32-bit instruction length and defines six primary instructio
 - rs2(5bits)	    ->   Source register 2.
 - func7(7bits)	  ->   Further distinguishes the operation (e.g., difference between ADD and SUB).
 
+## 2. I Type instruction
+
+I-type instruction format in RISC-V is a 32-bit instruction word that specifies one source operand as a 12-bit constant. This constant is a signed 2's complement number that is sign extended to form a 32-bit operand.
+
+
+
+- They can be used for load/store operations, branch operations, or immediate ALU operations. 
+- The sign-bit for the immediate is always in bit 31 of the instruction. 
+- RISC-V has an asymmetric immediate encoding, which means that the immediates are formed by concatenating different bits in an asymmetric order. 
+
 
