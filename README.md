@@ -205,6 +205,15 @@ Task is to identify instruction type of all the given instructions with its exac
 
 RISC-V uses a fixed 32-bit instruction length and defines six primary instruction formats: R, I, S, B, U, and J. These formats describe how various fields within the 32-bit instruction word are used.
 
+There are 6 instruction formats in RISC-V:
+
+R-format
+I-format
+S-format
+B-format
+U-format
+J-format
+
 ![Image](https://github.com/user-attachments/assets/ba8c652d-c1c0-4521-bce6-a70cc8592005)
 
 ## 1. R Type instruction
@@ -229,8 +238,7 @@ I-type instruction format in RISC-V is a 32-bit instruction word that specifies 
 - They can be used for load/store operations, branch operations, or immediate ALU operations. 
 - The sign-bit for the immediate is always in bit 31 of the instruction. 
 - RISC-V has an asymmetric immediate encoding, which means that the immediates are formed by concatenating different bits in an asymmetric order.
-- There are two source registers rs1 and rs2 on which various operations are performed based on certain conditions, and those conditions are defined by func3 field.
-- After performing operations on the source register based on the conditions, it is evaluated that if the condition is true, Program Counter value gets updated by PC = Present PC Value + Immediate Value, and if the condition is false then PC will be given as PC = Present PC value + 4 bytes, which states that PC will move to next instruction set.
+
 
 opcode	(0–6bits) -> 	Specifies the type of operation (e.g., LOAD, ADDI).
 rd	(7–11bits) -> 	Destination register.
@@ -253,3 +261,14 @@ rs1	(19-15bits) -> 	Source register 1 (base address register)
 funct3	(14-12bits) -> 	Function code (determines the store operation)
 imm[4:0]	(11-7bits) -> 	Lower 5 bits of the immediate value
 opcode	(6-0bits) -> 	Operation code (e.g., 0100011 for store)
+
+# 4. B type instruction
+
+RISC-VThe B-type instruction format in RISC-V is used for branch instructions that transfer control to a new instruction address. B-type instructions are a variation of the S-type format and are sometimes called SB.
+
+
+
+
+
+- There are two source registers rs1 and rs2 on which various operations are performed based on certain conditions, and those conditions are defined by func3 field.
+- After performing operations on the source register based on the conditions, it is evaluated that if the condition is true, Program Counter value gets updated by PC = Present PC Value + Immediate Value, and if the condition is false then PC will be given as PC = Present PC value + 4 bytes, which states that PC will move to next instruction set.
