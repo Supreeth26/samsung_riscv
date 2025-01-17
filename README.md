@@ -207,12 +207,17 @@ RISC-V uses a fixed 32-bit instruction length and defines six primary instructio
 
 There are 6 instruction formats in RISC-V:
 
-R-format
-I-format
-S-format
-B-format
-U-format
-J-format
+1. R-format
+
+2. I-format
+
+3. S-format
+
+4. B-format
+
+5. U-format
+
+6. J-format
 
 ![Image](https://github.com/user-attachments/assets/ba8c652d-c1c0-4521-bce6-a70cc8592005)
 
@@ -308,9 +313,9 @@ The J-type instruction format is used for jump instructions, which involve an im
 
 ![Image](https://github.com/user-attachments/assets/82a1711c-4776-4896-8906-bb53bfba1b0e)
 
-imm[20]	(31bit) -> 	Most significant bit of the immediate value
-imm[10:1]	(30-21bits) -> 	Bits 10 to 1 of the immediate value
-imm[11]	(20bit) -> 	Bit 11 of the immediate value
-imm[19:12]	(19-12bits) -> 	Bits 19 to 12 of the immediate value
-rd	(11-7bits) -> 	Destination register (to store return address)
-opcode	(6-0bits) -> 	Operation code (e.g., 1101111 for JAL)
+- imm[20]	(31bit) -> 	Most significant bit of the immediate value
+- imm[10:1]	(30-21bits) -> 	Bits 10 to 1 of the immediate value
+- imm[11]	(20bit) -> 	Bit 11 of the immediate value
+- imm[19:12]	(19-12bits) -> 	Bits 19 to 12 of the immediate value
+- rd	(11-7bits) -> 	Destination register (to store return address)
+- opcode	(6-0bits) -> 	Operation code (e.g., 1101111 for JAL)
