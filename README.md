@@ -255,20 +255,45 @@ The S-type instruction format in RISC-V is used to store data from a register in
 
 ![Image](https://github.com/user-attachments/assets/50466dca-ca91-4a71-bf0e-862edfba3472)
 
-imm[11:5]	(31-25bits) -> 	Upper 7 bits of the immediate value
-rs2	(24-20bits) -> 	Source register 2 (contains data to be stored)
-rs1	(19-15bits) -> 	Source register 1 (base address register)
-funct3	(14-12bits) -> 	Function code (determines the store operation)
-imm[4:0]	(11-7bits) -> 	Lower 5 bits of the immediate value
-opcode	(6-0bits) -> 	Operation code (e.g., 0100011 for store)
+- imm[11:5]	(31-25bits) -> 	Upper 7 bits of the immediate value
+- rs2	(24-20bits) -> 	Source register 2 (contains data to be stored)
+- rs1	(19-15bits) -> 	Source register 1 (base address register)
+- funct3	(14-12bits) -> 	Function code (determines the store operation)
+- imm[4:0]	(11-7bits) -> 	Lower 5 bits of the immediate value
+- opcode	(6-0bits) -> 	Operation code (e.g., 0100011 for store)
 
 # 4. B type instruction
 
 RISC-VThe B-type instruction format in RISC-V is used for branch instructions that transfer control to a new instruction address. B-type instructions are a variation of the S-type format and are sometimes called SB.
 
+![Image](https://github.com/user-attachments/assets/80c6b790-7a5c-4523-8d0a-8020f7e71bae)
 
-
-
-
+- The first 7 bits are reserved for the opcode 
+- The instruction includes at least one register operand, such as rs1, rs2, or rd 
+- The instruction encodes branch offsets that are multiples of 2 
+- The target address for the instruction is calculated by adding the branch offset to the PC address 
 - There are two source registers rs1 and rs2 on which various operations are performed based on certain conditions, and those conditions are defined by func3 field.
 - After performing operations on the source register based on the conditions, it is evaluated that if the condition is true, Program Counter value gets updated by PC = Present PC Value + Immediate Value, and if the condition is false then PC will be given as PC = Present PC value + 4 bytes, which states that PC will move to next instruction set.
+
+- imm[12]	(31bit) -> 	Most significant bit of the immediate value
+- imm[10:5]	(30-25bits) -> 	Bits 10 to 5 of the immediate value
+- rs2	(24-20bits) ->	Source register 2 (used for comparison)
+- rs1	(19-15bits) ->	Source register 1 (used for comparison)
+- funct3	(14-12bits) ->	Function code (determines the branch condition)
+- imm[4:1]	(11-8bits) -> 	Bits 4 to 1 of the immediate value
+- imm[11]	(7bit) -> 	Bit 11 of the immediate value
+- opcode	(6-0bits) -> 	Operation code (e.g., 1100011 for branch)
+
+# 5. U Type instruction
+
+In RISC-V, the U-type instruction format is used for instructions involving immediate values that occupy the upper 20 bits of a 32-bit word. The two primary U-type instructions are:
+
+- LUI (Load Upper Immediate): Used to load a 20-bit immediate into the upper 20 bits of a register.
+- AUIPC (Add Upper Immediate to PC): Computes a target address by adding a 20-bit immediate to the current program counter (PC).
+
+- imm[31:12]	(31-12bits) -> 	The 20-bit immediate value (upper bits)
+rd	(11-7bits) -> 	Destination register
+opcode	(6-0bits) -> 	Operation code (e.g., 0110111 for LUI)
+
+# 6. J Type instruction
+
