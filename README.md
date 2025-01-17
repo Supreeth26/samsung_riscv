@@ -224,10 +224,26 @@ RISC-V uses a fixed 32-bit instruction length and defines six primary instructio
 
 I-type instruction format in RISC-V is a 32-bit instruction word that specifies one source operand as a 12-bit constant. This constant is a signed 2's complement number that is sign extended to form a 32-bit operand.
 
-
+![Image](https://github.com/user-attachments/assets/990ba914-5c26-469c-a5f7-d9ee87593697)
 
 - They can be used for load/store operations, branch operations, or immediate ALU operations. 
 - The sign-bit for the immediate is always in bit 31 of the instruction. 
-- RISC-V has an asymmetric immediate encoding, which means that the immediates are formed by concatenating different bits in an asymmetric order. 
+- RISC-V has an asymmetric immediate encoding, which means that the immediates are formed by concatenating different bits in an asymmetric order.
+- There are two source registers rs1 and rs2 on which various operations are performed based on certain conditions, and those conditions are defined by func3 field.
+- After performing operations on the source register based on the conditions, it is evaluated that if the condition is true, Program Counter value gets updated by PC = Present PC Value + Immediate Value, and if the condition is false then PC will be given as PC = Present PC value + 4 bytes, which states that PC will move to next instruction set.
+
+opcode	(0–6bits) -> 	Specifies the type of operation (e.g., LOAD, ADDI).
+rd	(7–11bits) -> 	Destination register.
+funct3	(12–14bits) -> 	Specifies the operation within the opcode.
+rs1	(15–19bits) -> 	Source register 1.
+imm[11:0]	(20–31bits) -> 	12-bit immediate value (sign-extended).
+
+# 3. S Type instruction
+
+The S-type instruction format in RISC-V is used to store data from a register into memory.S-type instructions are also known as store instructions.
+
+- The S-type instruction format uses an immediate value to store the address where the data is to be stored. 
+- The S-type instruction format uses the upper seven bits of the instruction to store the immediate value.
+
 
 
