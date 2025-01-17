@@ -291,9 +291,26 @@ In RISC-V, the U-type instruction format is used for instructions involving imme
 - LUI (Load Upper Immediate): Used to load a 20-bit immediate into the upper 20 bits of a register.
 - AUIPC (Add Upper Immediate to PC): Computes a target address by adding a 20-bit immediate to the current program counter (PC).
 
+![Image](https://github.com/user-attachments/assets/1aafbf66-05c9-4471-8fc0-8e12ad355115)
+
 - imm[31:12]	(31-12bits) -> 	The 20-bit immediate value (upper bits)
 rd	(11-7bits) -> 	Destination register
 opcode	(6-0bits) -> 	Operation code (e.g., 0110111 for LUI)
 
 # 6. J Type instruction
 
+The J-type instruction format is used for jump instructions, which involve an immediate value specifying a target address relative to the current program counter (PC). The primary J-type instruction is:
+
+- JAL (Jump and Link): Used to jump to a target address and save the return address in a register.
+- The J-type instruction format is a variation of the U-type format, and is sometimes called UJ. 
+- The J-type instruction format is used for PC updating instructions, such as jumps and branches. 
+- The J-type instruction format uses a 20-bit immediate value, which is larger than the immediate values used in other instruction formats.
+
+![Image](https://github.com/user-attachments/assets/82a1711c-4776-4896-8906-bb53bfba1b0e)
+
+imm[20]	(31bit) -> 	Most significant bit of the immediate value
+imm[10:1]	(30-21bits) -> 	Bits 10 to 1 of the immediate value
+imm[11]	(20bit) -> 	Bit 11 of the immediate value
+imm[19:12]	(19-12bits) -> 	Bits 19 to 12 of the immediate value
+rd	(11-7bits) -> 	Destination register (to store return address)
+opcode	(6-0bits) -> 	Operation code (e.g., 1101111 for JAL)
