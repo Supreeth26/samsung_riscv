@@ -334,4 +334,25 @@ The J-type instruction format is used for jump instructions, which involve an im
 - sp is both the source (rs1) and destination (rd) register.
 - -16 is the signed immediate value.
 
-## 32 bit instruction is: 111111111000 00010 000 00010 0010011
+### 32 bit instruction is: 111111111000 00010 000 00010 0010011
+
+## 3. li a5 55
+
+- The instruction li a2, 55 is a pseudo-instruction in RISC-V. It expands to a real instruction depending on the immediate value. Since 55 fits within 12 bits, it translates to an I-type ADDI instruction.
+- a2 corresponds to register x12.
+- Immediate value: 55.
+- Opcode: 0010011
+
+ ### 32 bit instruction is:000000110111 00000 000 01100 0010011
+
+## 4. li a1,10
+
+- The instruction li a1, 10 is a pseudo-instruction in RISC-V. Since the immediate value 10 fits within 12 bits, it translates to an I-type ADDI instruction.
+- Destination Register (a1): Register x11.
+- Immediate: 10.
+- Opcode: 0010011
+
+ ### 32 bit instruction i:000000001010 00000 000 01011 0010011
+
+## 5. 
+  
