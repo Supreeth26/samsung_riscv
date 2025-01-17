@@ -245,5 +245,11 @@ The S-type instruction format in RISC-V is used to store data from a register in
 - The S-type instruction format uses an immediate value to store the address where the data is to be stored. 
 - The S-type instruction format uses the upper seven bits of the instruction to store the immediate value.
 
+![Image](https://github.com/user-attachments/assets/50466dca-ca91-4a71-bf0e-862edfba3472)
 
-
+imm[11:5]	(31-25bits) -> 	Upper 7 bits of the immediate value
+rs2	(24-20bits) -> 	Source register 2 (contains data to be stored)
+rs1	(19-15bits) -> 	Source register 1 (base address register)
+funct3	(14-12bits) -> 	Function code (determines the store operation)
+imm[4:0]	(11-7bits) -> 	Lower 5 bits of the immediate value
+opcode	(6-0bits) -> 	Operation code (e.g., 0100011 for store)
