@@ -315,9 +315,9 @@ The J-type instruction format is used for jump instructions, which involve an im
 - rd	(11-7bits) -> 	Destination register (to store return address)
 - opcode	(6-0bits) -> 	Operation code (e.g., 1101111 for JAL)
 
-### Now let us analyse the instruction of riscv -objdump of application code:
+### Now let us analyse the instructions of riscv -objdump application code:
 
-1. lui a0,0x21
+## 1. lui a0,0x21
 
 - The instruction LUI a0, 0x21 is a U-type instruction in RISC-V.
 - Type: U-type (Load Upper Immediate)
@@ -325,4 +325,13 @@ The J-type instruction format is used for jump instructions, which involve an im
 - a0 is the destination register.
 - 0x21 is the 20-bit immediate value (decimal 33).
 
-### 32 bit instruction is: 0110111_01010_00000000000000100001
+### 32 bit instruction is: 00000000000000100001_01010_0110111
+
+## 2. addi  sp,sp,-16
+
+- The instruction addi sp, sp, -16 is an I-type instruction in RISC-V
+- Opcode: 0010011 (for ADDI - Add Immediate).
+- sp is both the source (rs1) and destination (rd) register.
+- -16 is the signed immediate value.
+
+## 32 bit instruction is: 111111111000 00010 000 00010 0010011
