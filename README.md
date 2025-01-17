@@ -208,15 +208,10 @@ RISC-V uses a fixed 32-bit instruction length and defines six primary instructio
 There are 6 instruction formats in RISC-V:
 
 1. R-format
-
 2. I-format
-
 3. S-format
-
 4. B-format
-
 5. U-format
-
 6. J-format
 
 ![Image](https://github.com/user-attachments/assets/ba8c652d-c1c0-4521-bce6-a70cc8592005)
@@ -251,7 +246,7 @@ funct3	(12–14bits) -> 	Specifies the operation within the opcode.
 rs1	(15–19bits) -> 	Source register 1.
 imm[11:0]	(20–31bits) -> 	12-bit immediate value (sign-extended).
 
-# 3. S Type instruction
+## 3. S Type instruction
 
 The S-type instruction format in RISC-V is used to store data from a register into memory.S-type instructions are also known as store instructions.
 
@@ -267,7 +262,7 @@ The S-type instruction format in RISC-V is used to store data from a register in
 - imm[4:0]	(11-7bits) -> 	Lower 5 bits of the immediate value
 - opcode	(6-0bits) -> 	Operation code (e.g., 0100011 for store)
 
-# 4. B type instruction
+## 4. B type instruction
 
 RISC-VThe B-type instruction format in RISC-V is used for branch instructions that transfer control to a new instruction address. B-type instructions are a variation of the S-type format and are sometimes called SB.
 
@@ -289,7 +284,7 @@ RISC-VThe B-type instruction format in RISC-V is used for branch instructions th
 - imm[11]	(7bit) -> 	Bit 11 of the immediate value
 - opcode	(6-0bits) -> 	Operation code (e.g., 1100011 for branch)
 
-# 5. U Type instruction
+## 5. U Type instruction
 
 In RISC-V, the U-type instruction format is used for instructions involving immediate values that occupy the upper 20 bits of a 32-bit word. The two primary U-type instructions are:
 
@@ -302,7 +297,7 @@ In RISC-V, the U-type instruction format is used for instructions involving imme
 rd	(11-7bits) -> 	Destination register
 opcode	(6-0bits) -> 	Operation code (e.g., 0110111 for LUI)
 
-# 6. J Type instruction
+## 6. J Type instruction
 
 The J-type instruction format is used for jump instructions, which involve an immediate value specifying a target address relative to the current program counter (PC). The primary J-type instruction is:
 
