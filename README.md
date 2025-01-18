@@ -345,14 +345,66 @@ The J-type instruction format is used for jump instructions, which involve an im
 
  ### 32 bit instruction is:000000110111 00000 000 01100 0010011
 
-## 4. li a1,10
+## 4. sd  ra,8(sp)
 
-- The instruction li a1, 10 is a pseudo-instruction in RISC-V. Since the immediate value 10 fits within 12 bits, it translates to an I-type ADDI instruction.
-- Destination Register (a1): Register x11.
-- Immediate: 10.
-- Opcode: 0010011
+- The instruction sd ra, 8(sp) is a S-type (Store) instruction in RISC-V.
+- Mnemonic: sd (Store Doubleword)
+- Opcode: 0100011
+- Source Register (rs2): ra (register x1).
+- Base Register (rs1): sp (register x2).
+- Offset: 8.
 
- ### 32 bit instruction i:000000001010 00000 000 01011 0010011
+### 32 bit instruction is:0000000_00001_00010_011_01000_0100011
 
-## 5. 
-  
+## 5. jal  ra,10408 <printf>
+
+- The instruction jal ra, 10408 <printf> is a J-type (Jump and Link) instruction in RISC-V.
+- Mnemonic: jal (Jump and Link)
+- Opcode: 1101111
+- Jumps to a computed address (current PC + immediate) and stores the return address in the destination register.
+- Destination Register (rd): ra (register x1).
+- Immediate: 10408 (relative address from the current PC).
+
+### 32 bit instruction is: 0_1000010000_0_00000010_00001_1101111
+
+### 6. beqz a5, 100f4 <register_fini+0x18>
+
+- The instruction beqz a5, 100f4 <register_fini+0x18> is a branch instruction in RISC-V. Specifically, beqz is a pseudo-instruction that means "branch if equal to zero." It checks if the value in the source register (a5) is equal to zero, and if true, it jumps to the specified target address.
+
+- opcode:1100011
+- Source Register 1 (rs1): a5 (register x15).
+- Immediate Encoding: 0x24 = 00000000010010
+
+### 32 bit instruction is: 0       | 000001    | 00000 | 01111 | 000    | 0010     | 0       | 1100011
+
+### 7. j 101b0 <atexit>
+
+- The instruction j 101b0 <atexit> is a pseudo-instruction in RISC-V that stands for an unconditional jump to the specified address. It is a shorthand for the jal instruction with the destination register set to x0 (discarding the return address).
+- Opcode: 1101111
+- The jump target is specified as a relative offset from the current program counter (PC). The immediate value is the difference between the PC and the target address (101b0). The immediate is represented as a 21-bit signed value, shifted left by 1.
+- Target Address: 101b0.
+- Current PC: Assume PC = 10190 (this depends on context).
+- Offset: 101b0 - 10190 = 0x20 (32 in decimal).
+- Immediate Encoding: 0x20 = 00000000000100000 (21 bits).
+
+### 32 bit instruction is: 0       | 0000000010 | 0       | 00000000   | 00000 | 1101111
+
+### 8. auipc a5, 0xffff0
+
+- The instruction auipc a5, 0xffff0 is a U-type (Upper Immediate to PC) instruction in RISC-V.
+- It adds a 20-bit immediate to the program counter (PC) and stores the result in the specified register (a5).
+- Opcode: 0010111
+- Destination Register (rd): a5 (register x15).
+- Immediate (imm in hexadecimal): 0xffff0.
+
+### 32 bit instruction is:1111111111110000 | 01111 | 0010111
+
+### 9. ADD r6, r2, r1 
+ - All the arithmetic and logical operations are performed using R-type instruction format, hence this instruction belongs to R-type instruction set.
+ - Opcode for ADD = 0110011
+- rd = r6 = 00110
+- rs1 = r2 = 00010
+- rs2 = r1 = 00001
+- func3 = 000
+- func7 = 0000000
+### 32 bits instruction is: 0000000_00001_00010_000_00110_0110011
